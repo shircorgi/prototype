@@ -1,0 +1,70 @@
+.MainUi {
+  margin-top: 80px;
+  width: 1200px;
+  height: 110px;
+  /* background-color: #ddd; */
+  display: flex;
+  justify-content: center;
+}
+
+.MainUi-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.MainUi-icon-wrap {
+  position: relative;
+}
+
+.MainUi-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.MainUi-icon:hover {
+  border: 2px solid #902bf5;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.MainUi-icon-wrap span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.MainUi-icon-wrap span::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #902bf5;
+  content: "";
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.MainUi-icon-wrap span:hover::after,
+.MainUi-icon-wrap span:focus::after {
+  height: 3px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(4px);
+}

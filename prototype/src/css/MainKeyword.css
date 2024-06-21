@@ -1,0 +1,48 @@
+.MainKeyword {
+  width: 1200px;
+  height: 300px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+
+.MainKeyword-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MainKeyword-ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.MainKeyword-li {
+  display: inline-block;
+  padding: 0 30px;
+  background-color: rgb(255, 255, 159, 0.4);
+  border-radius: 24px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.MainKeyword-li a {
+  line-height: 48px;
+  font-size: 16px;
+  color: #000;
+}
+
+.MainKeyword-li:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-out;
+  background-color: #902bf5;
+}
+
+.MainKeyword-li:hover a {
+  color: #fff;
+}
